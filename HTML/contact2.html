@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="utf-8" />
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="../CSS/pf.css">
+        <script src="sketch.js"></script>   
+    </head>
+
+    <body class="container bgcol1 pt-5">
+
+      
+    
+        <h1>welcome to my form</h1>
+        <form action="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+            <div class="fstyle tcol fontf ts2 textsize mt-5" id="name"> 
+                Name: <input type="text" name="fname"></div>
+
+            <b><div class="formerror">
+                </b> </div>
+
+            <div class="fstyle tcol fontf ts2 textsize mt-5" id="email"> 
+                Email id: <input type="email" name="femail"></div>
+
+            <b><div class="formerror"> 
+                 </b></div>
+
+            <div class="fstyle tcol fontf ts2 textsize mt-5" id="phone"> 
+                Phone no.: <input type="phone" name="fphone"></div>
+
+            <b><div class="formerror"> 
+                 </b></div>
+
+            <input  type="submit" value="submit">
+        </form>
+
+                </body>
+                
+
+        
+        <script>
+            function seterror(id, error) {
+                element = document.getElementById(id);
+                element.getElementsByClassName('formerror')[0].innerHTML = error;  
+            }
+
+
+            function validateForm() {
+                var returnval = true; 
+                var name = document.forms ['myForm']['fname'].value;
+                if (name.length<5){
+                        seterror("name", Incorrect.);
+                        returnval = false;
+                }
+
+
+
+                return returnval;
+
+            }
+
+            function validateForm() {
+                    let x = document.forms["myForm"]["fname"].value;
+                    if (x == "") {
+                        alert("Name must be filled out");
+                        return false;
+                    }
+                }
+        </script>
+
+
+
+
+</html>

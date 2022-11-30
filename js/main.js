@@ -1,0 +1,20 @@
+
+
+function setup() {
+        createCanvas(1300, 500);
+        background('#4d004d')
+
+        }
+
+        function draw() {
+        circle(mouseX, mouseY, 200 );
+        fill('#000000')
+        stroke('#FFFFFF')
+
+        //triangle(10, 10, 10,50, 50, 50)
+        //rect(20,20,20,20);
+        //line(40, 20, 20, 20)
+        //triangle(30, 75, 58, 20, 86, 75);
+        //describe('white triangle with black outline in mid-centre of canvas');
+}
+        
