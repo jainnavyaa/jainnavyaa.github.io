@@ -12,6 +12,7 @@
             <!-- Latest compiled JavaScript -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
             <link rel="stylesheet" href="../CSS/pf.css">
+            <script src="../js/script.js"></script>
 
     </head>
 
@@ -20,14 +21,14 @@
         <nav class="navbar navbar-expand-sm" style="align-items:center ;">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">
+                    <a class="nav-link" href="/HTML/index.html">
                         <h6 class="fontf textsize mt-5  p-3 tcol2">
                             <b>HOME</b>
                         </h6>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">
+                    <a class="nav-link" href="/HTML/gallery.html">
                         <h6 class="fontf textsize mt-5 p-3 tcol2">
                             <b>GALLERY</b>
                         </h6>
@@ -41,14 +42,14 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contactme.html">
+                    <a class="nav-link" href="/HTML/contactme.html">
                         <h6 class="fontf textsize mt-5 p-3 tcol2">
                             <b>CONTACT</b>
                         </h6>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../HTML/javascript.html">
+                    <a class="nav-link" href="/HTML/javascript.html">
                         <h6 class="fontf textsize mt-5 p-3 tcol2">
                             <b>JAVASCRIPT</b>
                         </h6>
@@ -68,32 +69,37 @@
         </h3>
  <br> <br>
 
-<div class="margin ta bgpic ">
-    <form>
-        <label for="fname"> <p class="tcol1 fontf ts2 textsize mt-5">
-            Your Name </p></label> <br>
-        <input type="text" id="fname" name="fname" value=""> <br> <br>
-        <label for="email"><p class="tcol1 fontf ts2 textsize ">
-            Email id </p></label> <br>
-        <input type="text" id="email" name="email" value=""> <br><br>
-        <label for="gender">
-            <p class="tcol1 fontf ts2 textsize ">
-                Your Gender </p>
-        </label> <br>
-        <input type="text" id="gender" name="gender" value=""> <br><br>
-        <label for="country">
-            <p class="tcol1 fontf ts2 textsize" >
-                Your Country </p>
-        </label> <br>
-        <input type="text" id="country" name="country" value=""> <br><br>
-        <h6 class="fontf ta textsize tcol1 ts2"> 
-           Share your thoughts! 
-        </h6> <br>
-        <textarea>  Some text...</textarea> <br><br> <br>
-        <input type="submit" value="Submit">
-    </form>
-
-<br><br><br><br>
+<div class="margin ta ">
+        <div class="input_container">
+            <b><label for="text" class="form-label fontf  tcol1 bgcol3">Enter name:</label>
+            <form name="formValidation" id="formVlidation">
+                <div class="input-row fontf">
+                    <input type="" name="name" placeholder="Name*" required>
+                </div>
+                <br>
+                <div class="input-row fontf">
+                    <b><label for="email" class="form-label fontf tcol1 bgcol3">Enter email:</label> </b><br>
+                    <input type="email" name="email" placeholder="Email*" required>
+                </div>
+                <br>
+        
+                <div class="input-row fontf">
+                    <b><label for="phone" class="form-label fontf tcol1 bgcol3">Enter phone number:</label> </b><br>
+                    <input type="" name="phone" placeholder="Phone*" required>
+                </div>
+                <br> <br><br>
+        
+                <p class="fontf"><b >share your thoughts!</b></p>
+                <div class="input-row">
+                    <textarea placeholder="message" name="formMessage" required></textarea>
+                </div>
+                <br>
+                <div class="">
+                    <input type="submit" value="Submit">
+                </div>
+                <br>
+                <br>
+            </form>
 
 
 
